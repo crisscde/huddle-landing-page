@@ -198,6 +198,7 @@ body {
   body {
     background-image: url("assets/images/bg-desktop.svg");
     background-size: 90dvw 100dvh;
+    height: 100dvh;
   }
 
   .header,
