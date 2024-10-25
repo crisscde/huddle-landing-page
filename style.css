@@ -1,6 +1,7 @@
 :root {
-  --violet: hsl(257, 40%, 49%);
-  --soft-magenta: hsl(300, 69%, 71%);
+  --violet: hsl(257 40% 49%);
+  --soft-magenta: hsl(300 69% 71%);
+  --white: hsl(0 0 100%);
   --fw-400: 400;
   --fw-600: 600;
   --fs-title: 1.5rem;
@@ -66,3 +67,51 @@ svg {
   display: block;
   max-width: 100%;
 }
+
+body {
+  background: var(--violet) url("assets/images/bg-mobile.svg") 0% 0% / 100% no-repeat;
+  color: var(--white);
+}
+
+.header,
+.main,
+.footer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  padding: 2rem 0 4rem;
+}
+
+.header__img {
+  max-width: 200px;
+  width: 40%;
+  min-width: 120px;
+}
+
+/*
+main
+main__img
+main__content
+main__title
+main__paragraph
+main__link
+footer
+footer__img
+footer__img
+footer__img
+*/
+
+@media (width > 650px) {
+  body {
+    background-image: url("assets/images/bg-desktop.svg");
+  }
+  .header,
+  .main,
+  .footer {
+    width: 90%;
+  }
+}
+
