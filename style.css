@@ -75,6 +75,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   padding-block: 4rem;
+  gap: 2rem;
   min-height: 100dvh;
   align-items: center;
 }
@@ -191,6 +192,7 @@ body {
   body {
     background-image: url("assets/images/bg-desktop.svg");
     background-size: 90dvw 100dvh;
+    gap: 0;
   }
 
   .header,
